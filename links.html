@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="links.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.cdnfonts.com/css/freizeit-120" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: 100%;
+            height: 50%;
+            /* background-color: green; */
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            /* background-color: purple; */
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 5px;
+            border-radius: 13px;
+            /* background: yellow; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 200px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            /* background-color: purple; */
+        }
+
+        @media(max-width:745px) {
+            .swiper {
+                width: 100%;
+                height: 50%;
+                /* background-color:orange; */
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                /* background-color: purple; */
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 50%;
+                height: 50%;
+                object-fit: cover;
+                /* background-color: purple; */
+            }
+        }
+
+        /* .main-area {
+            background-color: transparent;
+            padding: 100px;
+            flex-basis: 70%;
+        } */
+
+        .testimonial-swiper-container {
+            width: 100%;
+
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+            display: flex;
+            align-items: center;
+
+        }
+
+        .testimonial-swiper-slide {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            /* background-color: green; */
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .testimonial-swiper-slide img {
+            width: 450px;
+            height: 100%;
+            border-radius: 10px;
+            object-position: center;
+            object-fit: cover;
+            justify-content: start;
+            margin-left: -20px;
+        }
+
+        .testimonial-content {
+            height: 100%;
+            max-width: 60%;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            text-align: start;
+            /* background-color: red; */
+        }
+
+        .testimonial-content h2 {
+            font-size: 24px;
+            font-weight: 450;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-content p {
+            width: auto;
+            color: #000000;
+            font-size: 16px;
+            line-height: 1.6;
+            /* background-color: blue; */
+            align-self: start;
+            font-weight: 400;
+            /* margin-left: 5px; */
+        }
+
+        .testimonial-content span {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .testimonial-swiper-pagination {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: auto;
+        }
+
+        /* .testimonial-swiper-pagination .swiper-pagination-bullet {
+            background: #00a2ff;
+            opacity: 1;
+        }
+
+        .testimonial-swiper-pagination .swiper-pagination-bullet-active {
+            background: #00a2ff;
+        } */
+        @media(max-width:927px) {
+            .testimonial-swiper-slide img {
+                width: 450px;
+                height: 100%;
+                border-radius: 10px;
+                object-position: center;
+                object-fit: cover;
+                justify-content: start;
+                /* margin-left: -20px; */
+
+            }
+
+            .testimonial-swiper-container {
+                width: 100%;
+                height: 500px;
+                border-radius: 10px;
+                overflow: hidden;
+                /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+                display: flex;
+                align-items: center;
+                /* background-color: green; */
+                margin-bottom: 20px;
+
+            }
+
+            .testimonial-content {
+                height: 70%;
+                max-width: 90%;
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                text-align: left;
+                /* background-color: red; */
+                gap: 4px;
+                padding-bottom: 30px;
+                font-size: 13px;
+            }
+
+            .testimonial-swiper-slide {
+                flex-direction: column;
+                height: 40rem;
+                /* background-color: blue; */
+            }
+
+            .testimonial-swiper-slide img {
+                width: 450px;
+                height: 20rem;
+                object-fit: ;
+            }
+
+        }
+
+        @media(max-width:745px) {
+            .testimonial-swiper-slide img {
+                width: 450px;
+                height: 100%;
+                border-radius: 10px;
+                object-position: center;
+                object-fit: cover;
+                justify-content: start;
+                margin-left: -20px;
+
+            }
+
+            .testimonial-swiper-container {
+                width: 100%;
+
+                height: 400px;
+                border-radius: 10px;
+                overflow: hidden;
+                /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+                display: flex;
+                align-items: center;
+                /* background-color: green; */
+
+            }
+
+            .testimonial-content {
+                height: 100%;
+                max-width: 85%;
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                text-align: start;
+                /* background-color: red; */
+                font-size: 10px;
+            }
+
+            .testimonial-swiper-slide {
+                flex-direction: column;
+                height: 30rem;
+            }
+
+            .testimonial-swiper-slide img {
+                width: 450px;
+                height: 10rem;
+                object-fit: ;
+            }
+        }
+
+        @media(max-width:500px) {
+            .testimonial-swiper-slide img {
+                width: 450px;
+                height: 100%;
+                border-radius: 10px;
+                object-position: center;
+                object-fit: cover;
+                justify-content: start;
+                margin-left: -20px;
+
+            }
+
+            .testimonial-swiper-container {
+                width: 100%;
+
+                height: 400px;
+                border-radius: 10px;
+                overflow: hidden;
+                /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+                display: flex;
+                align-items: center;
+                /* background-color: green; */
+
+            }
+
+            .testimonial-content {
+                height: 100%;
+                max-width: 85%;
+                margin-left: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                text-align: start;
+                /* background-color: red; */
+                font-size: 10px;
+            }
+
+            .testimonial-swiper-slide {
+                flex-direction: column;
+                height: 30rem;
+            }
+
+            .testimonial-swiper-slide img {
+                width: 450px;
+                height: 10rem;
+                object-fit: ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="every">
+        <div class="top">
+            <p>Receive payments in 15 secs <span class="spee">and get alerts on Whatsapp</span> with Bumpa Terminal.
+                <span>Click</span> here
+                <span>to learn more</span>
+            </p>
+        </div>
+        <nav class="tees">
+            <div class="main-links">
+                <div class="logo">
+                    <img src="img/bumpa.png" alt="">
+                </div>
+                <div class="sub-links">
+                    <div class="nav-item dropdown">
+                        <a href="">Features <i class="bi bi-chevron-down care"></i></a>
+                        <div class="dropdown-content">
+                            <div class="drops">
+                                <div class="one">
+                                    <a href="#"><i class="bi bi-journal"></i> Record Sales</a>
+                                    <a href="#"><i class="bi bi-receipt"></i> Invoices & Receipts</a>
+                                    <a href="#"><i class="bi bi-chat-dots"></i> Messaging</a>
+                                </div>
+                                <div class="two">
+                                    <a href="#"> <i class="bi bi-bar-chart-line"></i> Analytics</a>
+                                    <a href="#"><i class="bi bi-globe"></i> Business website</a>
+                                    <a href="#"><i class="bi bi-rocket-takeoff"></i> Connected Apps</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="">Company <i class="bi bi-chevron-down care"></i></a>
+                        <div class="dropdown-content">
+                            <div class="drops">
+                                <div class="one">
+                                    <a href="#">About Us</a>
+                                </div>
+                                <div class="two">
+                                    <a href="#">Careers</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="">Categories <i class="bi bi-chevron-down care"></i></a>
+                        <div class="dropdown-content">
+                            <div class="drops">
+                                <a href="#">Fashion</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="">Pricing</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="">Learn <i class="bi bi-chevron-down care"></i></a>
+                        <div class="dropdown-content">
+                            <div class="drops">
+                                <div class="one">
+                                    <a href="#">Blog</a>
+                                    <a href="#">Community</a>
+                                </div>
+                                <div class="two">
+                                    <a href="#">FAQs</a>
+                                    <a href="#">Bumpa Academy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="bumpas"><a href="">Bumpa Growth</a></button>
+                </div>
+            </div>
+            <div class="tabs">
+                <button class="login">Login</button>
+                <button class="btn2">Get Started</button>
+            </div>
+            <i class="bi bi-list hams"></i>
+        </nav>
+    </div>
+    <div class="carti">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The best business management app for SMEs.</h1>
+                <h2 class="hero-content2">The best business
+                    <br>
+                    management app
+                    <br>
+                    for SMEs.
+                </h2>
+                <p>Create a business website, issue invoices, record sales,receive financial reports & manage all
+                    business operations on the Bumpa app.</p>
+                <a href="#" class="btn">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.getbumpa.com/images/heroimg.png" alt="Business Management App">
+            </div>
+        </section>
+        <div class="sects">
+            <div class="cold">
+                <div class="left">
+                    <h2 class="title">Bring your business online</h2>
+                    <p class="description">
+                        Create a professional business website in 60 seconds and
+                        start selling to anyone on the internet.</p>
+                    <span class="learn">Learn More <i class="bi bi-arrow-right"></i></span>
+                    <div class="image-container">
+                        <img src="https://www.getbumpa.com/images/business.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cold">
+                <div class="left">
+                    <h2>Become a tech-enabled business</h2>
+                    <p class="description2">Create invoices & receipts, save customer details and record your daily
+                        sales
+                        from the shop, website, social media, and marketplaces easily on your mobile phone.
+                    </p>
+                    <span class="learn">Learn More <i class="bi bi-arrow-right"></i></span>
+                    <div class="image-container2">
+                        <img src="https://www.getbumpa.com/images/connect.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see">
+            <div class="sect">
+                <div class="let">
+                    <div class="imagecotainer">
+                        <img src="https://www.getbumpa.com/images/phone.png" alt="">
+                    </div>
+                </div>
+                <div class="let2">
+                    <div class="description3">
+                        <h2 class="animate__animated animate__bounce">Do so much more for your business…from just one
+                            app.</h2>
+                        <h3 class="styled">Grow your business like a pro!</h3>
+                        <div class="direct">
+                            <p>With tools designed for easy use, you can now do more for your business, and we’re ready
+                                to
+                                show you how!</p>
+                        </div>
+                        <div class="cta">
+                            <button class="cta-button">Awesome,Show Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="according">
+            <div class="header">
+                <h1>How <strong class="bimps">Bumpa</strong> can help you</h1>
+                <p>There’s a Bumpa feature for every business need.</p>
+            </div>
+            <div class="acc">
+                <div class="left1">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">Create a business website <i
+                                    class="bi bi-chevron-down care"></i></div>
+                            <div class="accordion-content">Set up your own business website in 60 seconds and display
+                                products for sale.</div>
+                            <button class="btn3 accordion-content">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Issue Invoices & Send Receipts <i
+                                    class="bi bi-chevron-down care"></i></div>
+                            <div class="accordion-content">Content for issuing invoices and sending receipts goes
+                                here...</div>
+                            <button class="btn3 accordion-content">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Record Sales, Expenses & Customer Information <i
+                                    class="bi bi-chevron-down care"></i></div>
+                            <div class="accordion-content">Content for recording sales, expenses, and customer
+                                information goes here...</div>
+                            <button class="btn3 accordion-content">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Send messages to Customers <i
+                                    class="bi bi-chevron-down care"></i></div>
+                            <div class="accordion-content">Content for sending messages to customers goes here...</div>
+                            <button class="btn3 accordion-content">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Receive business report <i
+                                    class="bi bi-chevron-down care"></i></div>
+                            <div class="accordion-content">Content for receiving business reports goes here...</div>
+                            <button class="btn3 accordion-content">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">Meta Integration <i class="bi bi-chevron-down care"></i></div>
+                            <div class="accordion-content">Content for Meta Integration goes here...</div>
+                            <button class="btn3 accordion-content">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right1">
+                    <div class="imagecotainer2">
+                        <img src="https://www.getbumpa.com/images/websitehome.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="connected">
+            <div class="wrappers">
+                <div class="text-part">
+                    <h1>Connected Apps</h1>
+                    <p class="reasons">Your Bumpa app works easily with these business tools.</p>
+                    <span class="learnings">Learn More <i class="bi bi-arrow-right"></i></span>
+                </div>
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/facebook.png" alt="">
+                            </div>
+                            <p class="socials">Facebook</p>
+                            <span class="green"> <i class="bi bi-dot dotts"></i> Connected</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/instagram.png" alt="">
+                            </div>
+                            <p class="socials">Instagram</p>
+                            <span class="green"> <i class="bi bi-dot dotts"></i> Connected</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/paystack.png" alt="">
+                            </div>
+                            <p class="socials">Paystack</p>
+                            <span class="green"> <i class="bi bi-dot dotts"></i> Connected</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/flw.png" alt="">
+                            </div>
+                            <p class="socials">Flutterwave</p>
+                            <span class="green"> <i class="bi bi-dot dotts"></i> Connected</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/pixel.png" alt="">
+                            </div>
+                            <p class="socials">Pixel</p>
+                            <span class="green"> <i class="bi bi-dot dotts"></i> connected</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/hostintegration.png" alt="">
+                            </div>
+                            <p class="socials">Whogohost</p>
+                            <span class="green"> <i class="bi bi-dot dotts"></i> Connected</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/messenger.png" alt="">
+                            </div>
+                            <p class="socials">Messenger</p>
+                            <span class="green"> <i class="bi bi-dot dotted"></i> Pending</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/google.png" alt="">
+                            </div>
+                            <p class="socials">GMB</p>
+                            <span class="green"> <i class="bi bi-dot dotted"></i> Pending</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/whatsapp.png" alt="">
+                            </div>
+                            <p class="socials">Whatsapp</p>
+                            <span class="green"> <i class="bi bi-dot dotted"></i> Pending</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cons">
+                                <img src="https://www.getbumpa.com/images/logistics.png" alt="">
+                            </div>
+                            <p class="socials">Logistics</p>
+                            <span class="green"> <i class="bi bi-dot dotted"></i> Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="placed">
+            <div class="text-area">
+                <h1>Trusted by over <span class="number" data-counter="50000">0</span> SMEs</h1>
+                <p class="motto">Our customers talk about how Bumpa solves real life business problems for <br> them</p>
+            </div>
+            <div class="main-area">
+                <!-- Swiper Container -->
+                <div class="testimonial-swiper-container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+
+                        <div class="swiper-slide testimonial-swiper-slide">
+                            <img src="https://www.getbumpa.com/images/steph.jpg" alt="Testimonial 1">
+                            <div class="testimonial-content">
+                                <h2>“Bumpreneur”</h2>
+                                <p>Bumpa app is honestly a must have for any business owner!! From bookkeeping to
+                                    analytics, to website and now the latest Meta and Bumpa integration; Managing my
+                                    business has become easier and more structured. I’m happy to be a bumpreneur.
+                                </p>
+                                <span>— Stephanie, CEO Nyne and Nuel</span>
+                            </div>
+                        </div>
+
+
+                        <!-- Slide 2 -->
+
+
+                        <div class="swiper-slide testimonial-swiper-slide">
+                            <img src="https://www.getbumpa.com/images/peculiar.jpg" alt="Testimonial 2">
+                            <div class="testimonial-content">
+                                <h2>“Extraodinary”</h2>
+                                <p>Bumpa is doing extraordinary for every small and Medium business
+                                    owners on the platform.For shop Tadi,it's more than just an app.it's the fact
+                                    that
+                                    they make out the time to teach and walk me through the process of being a
+                                    better
+                                    entrepreneur.Not every can do that and that's incredible.</p>
+                                <span>— Peculiar, CEO Shop Tadi</span>
+                            </div>
+                        </div>
+
+
+                        <!-- slide 3 -->
+
+                        <div class="swiper-slide testimonial-swiper-slide">
+                            <img src="https://www.getbumpa.com/images/ore.jpg" alt="Testimonial 2">
+                            <div class="testimonial-content">
+                                <h2>“Thank you Bumpa”</h2>
+                                <p>Thank you Bumpa for making my entrepreneurial journey easy. As a pro
+                                    subscriber,i got to rest knowing i have one less thing to worry about, with
+                                    regards
+                                    to success of my business. Thank you Bumpa for empowering me with the
+                                    resources,coaching sessions to grow my business. i'm happy because
+                                    every message from you is a message to help my business thrive</p>
+                                <span>— ore, CEO Lip Gloss Wholesale Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Pagination -->
+                <!-- <div class="swiper-pagination testimonial-swiper-pagination"></div> -->
+            </div>
+            <div class="last">
+                <div class="btn6">
+                    <h4 class="support">..and a whole community to support</h4>
+                    <p class="support2">We are growing the largest community of business owners <br>
+                        and entrepreneur in Africa</p>
+                    <button class="btn4">Learn More <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="price-section">
+            <div class="text-price">
+                <h1 class="basic">Save <strong class="perc">20%</strong> on any 1year plan</h1>
+                <p class="basics">Subscribe for 1 year and save 20% off your subscription fee.</p>
+            </div>
+            <div class="payments-plans">
+                <h1 class="plan-button" id="quarterly">Quarterly</h1>
+                <h1 class="plan-button" id="biannually">Biannually</h1>
+                <h1 class="plan-button" id="yearly">Yearly</h1>
+            </div>
+            <div class="warp">
+                <div class="mains">
+                    <div class="pricing-card">
+                        <h3>Find the Bumpa Plan that Suits Your Business</h3>
+
+                        <p class="details2">
+                            Take this short quiz to find the Plan that caters to your current business status.
+                        </p>
+                        <button>Find Your Plan</button>
+                    </div>
+                </div>
+                <div class="mains">
+                    <div class="pricing-card">
+                        <h2>Bumpa Basic</h2>
+                        <p class="description6">For new businesses still figuring things out.
+                        </p>
+                        <div class="price3">
+                            <span>N0.0</span>
+                        </div>
+                        <small class="smell">This is a free plan.</small>
+
+                        <p class="details">
+                            Scale your business with advanced tools that help you manage large inventory, staff &
+                            multiple
+                            store locations in one central system.
+                        </p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+
+                <div class="mains">
+                    <div class="pricing-card">
+                        <h2>Bumpa Starter</h2>
+                        <p class="description9">For solopreneurs with few products & a small customer base.
+                        </p>
+                        <div class="price2" id="starter-price">
+                            <span>N15,000</span>
+                        </div>
+                        <small class="smell" id="starter-billing">Billed quarterly. (N5,000 per month)</small>
+
+                        <p class="details">
+                            Scale your business with advanced tools that help you manage large inventory, staff &
+                            multiple
+                            store locations in one central system.
+                        </p>
+                        <button>Start free trial</button>
+                    </div>
+                </div>
+                <div class="mains">
+                    <div class="pricing-card">
+                        <h2>Bumpa Pro</h2>
+                        <p class="description9">For growing businesses that sell on social media with a small team and
+                            sizeable inventory.
+                        </p>
+                        <div class="price4">
+                            <span>N30,000</span>
+                        </div>
+                        <small class="smell" id="pro-billing">Billed quarterly. (N10,000 per month)</small>
+
+                        <p class="details">
+                            Stay on top of your business with premium tools that help you manage sales on social media
+                            better, automate shipping & improve your brand visibility.
+                        </p>
+                        <button>Start free trial</button>
+                    </div>
+                </div>
+                <div class="mains">
+                    <div class="pricing-card">
+                        <h2>Bumpa Growth</h2>
+                        <p class="description9">For large scale businesses with multiple stores, staff and a large
+                            inventory.
+                        </p>
+                        <div class="availability">
+                            <span>Only available on a Yearly plan</span>
+                        </div>
+                        <div class="price" id="growth-price">
+                            <span>N75,000</span>
+                        </div>
+                        <small class="smell" id="growth-billing">Billed yearly. (N25,000 per month)</small>
+
+                        <p class="details">
+                            Scale your business with advanced tools that help you manage large inventory, staff &
+                            multiple
+                            store locations in one central system.
+                        </p>
+                        <button>Start free trial</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="busy">
+                <h1>Bumpa in the press</h1>
+                <p>The media recognises what we are doing for small businesses in Africa.</p>
+            </div>
+            <div class="africa">
+                <div class="logo-slider">
+                    <div class="slider-track">
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/3ngQANFzWxKBnVxuBCkT9c/392e03135258ccbe973f3731102d2268/techpoint.png"
+                                alt="Logo 1">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/Jwx9sS6k9sKhV1wPahDTk/b5b4bd785007749756713fc78f506f6d/techcabal.png"
+                                alt="Logo 2">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/aoWNnv56MYfIvi6X3fh4Y/0415e3a783b349cac9592a5793710e26/BusinessdayLogo.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/1L4qm0STUZjGH54kAllWi1/040f7aeecf36d05edeae2ab3550e49b5/Quartz_logo.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/2bBaNI4vm5QK1h9oTG1sxR/76ce10fab27945286fcb4a898cb93ad4/punch-newspaper-logo-1024x768.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/4hkWJPRdZ5f5TFilkKh1F8/10daa23470fb32f57a4d3666126a2a5b/technext.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/2oV8a0b82A0Kw8pPpqYAkp/d076c659c1c8ba5861eb4842b76dc6a4/disrupt.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/3ngQANFzWxKBnVxuBCkT9c/392e03135258ccbe973f3731102d2268/techpoint.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/3ngQANFzWxKBnVxuBCkT9c/392e03135258ccbe973f3731102d2268/techpoint.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/3ngQANFzWxKBnVxuBCkT9c/392e03135258ccbe973f3731102d2268/techpoint.png"
+                                alt="Logo 3">
+                        </div>
+                        <div class="slide">
+                            <img src="https://images.ctfassets.net/3c192pdrgjge/3ngQANFzWxKBnVxuBCkT9c/392e03135258ccbe973f3731102d2268/techpoint.png"
+                                alt="Logo 3">
+                        </div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- new section -->
+        <div class="stores">
+            <div class="playstore">
+                <div class="apple">
+                    <h1>Get started with Bumpa</h1>
+                    <div class="super">
+                        <p>Turn your phone into a mobile store instantly. Start selling online and managing your
+                            business
+                            with
+                            ease.</p>
+                    </div>
+                    <div class="bon">
+                        <button class="cta-button3"> <span class="beep"><i class="bi bi-google-play"></span></i> Get it
+                            on
+                            <br>
+                            <span>Google play</span></button>
+                        <button class="cta-button3"> <i class="bi bi-apple apples"></i>Download on the
+                            <br>
+                            <span>App Store</span></button>
+                    </div>
+                </div>
+                <div class="andriod">
+                    <div class="aps">
+                        <img src="https://www.getbumpa.com/images/getillustration.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foots">
+            <div class="foot">
+                <div class="bumper">
+                    <div class="rep">
+                        <img src="img/bumpa.png" alt="">
+                    </div>
+                    <p>The 360 business management experience for small businesses across Africa</p>
+                    <div class="icons">
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-linkedin"></i>
+                    </div>
+                    <h3>2024 Salescabal Inc. All Rights Reserved.</h3>
+                    <div class="stap">
+                        <img src="https://www.getbumpa.com/images/ndpr.png" alt="">
+                    </div>
+                </div>
+                <div class="bumpers">
+                    <p>Company</p>
+                    <p>About Us</p>
+                    <p>pricing</p>
+                    <p>Bumpa Academy</p>
+                    <p>Careers</p>
+                    <p>contact</p>
+                </div>
+                <div class="bumpers">
+                    <p>Resources</p>
+                    <p>Blog</p>
+                    <p>fAQs</p>
+                    <p>Support</p>
+                </div>
+                <div class="bumpers">
+                    <p>Legal</p>
+                    <p>Legal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <!-- If we need scrollbar -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            mousewheel: true,
+            slidesPerView: 8,
+            spaceBetween: 25,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                400: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.testimonial-swiper-container', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 100,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.testimonial-swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="bumpa.js"></script>
+</body>
+
+</html>

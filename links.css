@@ -1,0 +1,2539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    /* background-color: green; */
+    position: relative;
+    height: 100vh;
+}
+
+/* .every{
+    background-color: red;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+} */
+.top {
+    width: 100%;
+    background-color: #222222;
+    padding: 0.7rem;
+    /* position: fixed; */
+    top: 0;
+    z-index: 100;
+}
+
+.carti {
+    max-width: 1536px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    margin: 0 auto;
+    /* background: green; */
+    /* max-width: 1536px; */
+    /* padding-right: 40px;
+    padding-left: 40px; */
+    /* margin: 10px auto; */
+}
+
+p {
+    color: white;
+    font-weight: 600;
+    font-family: 'inter', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px;
+}
+
+/* end of top section */
+/* beginnin of navbar */
+
+.tees {
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 66px; */
+    padding: 20px 67px;
+    /* width: auto; */
+    /* position: fixed; */
+    /* top: 0.7rem; */
+    /* padding-left: 40px; */
+    background-color: white;
+    z-index: 100;
+
+}
+
+.main-links {
+    text-decoration: none;
+    display: flex;
+    /* gap: 60px; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    /* background-color:red; */
+    margin-right: 3rem;
+}
+
+.sub-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.sub-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 7px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 600px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    text-align: left;
+    /* min-height: 300px; */
+}
+
+.drops {
+    /* background-color: blue; */
+    display: flex;
+    width: 100%;
+}
+
+.drops .one {
+    width: 50%;
+    /* background-color: red; */
+}
+
+.drops .two {
+    width: 50%;
+    /* background-color: purple; */
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 0.9em;
+    /* background-color: red; */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style for the nav items */
+.nav-item a {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+/* Style for the chevron icon */
+.care {
+    font-size: 0.8em;
+}
+
+/* Additional button style for Bumpa Growth
+.bumpas {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    cursor: pointer;
+}
+
+.bumpas a {
+    color: white;
+    text-decoration: none;
+} */
+
+
+
+
+.care {
+    font-weight: bolder;
+}
+
+.bumpas {
+    font-size: 16px;
+    width: 8rem;
+    padding: 9px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border-radius: 2rem;
+    border: none;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hams {
+    color: black;
+    font-size: 25px;
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    width: 110px;
+    padding: 8px 0;
+    height: 48px;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #009444;
+    background-color: transparent;
+
+}
+
+.btn2 {
+    width: 110px;
+    padding: 8px 0;
+    height: 48px;
+    background: rgb(3, 145, 3);
+    border-radius: 12px;
+    color: white;
+    border: none;
+}
+
+/* end of navbar */
+/* beginning of hero */
+/*  */
+/* .container{
+    height: 88%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+} */
+.hero {
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 24px auto;
+    gap: 90px;
+    /* background-color: red; */
+    padding-left: 0;
+}
+
+.hero-content {
+    max-width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-content h1 {
+    /* font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    background-color: yellow; */
+    font-size: 50px;
+    /* Adjust size as needed */
+    font-weight: 500;
+    /* You can use 400, 500, or 600 depending on how bold you want it */
+    line-height: 1.2;
+    /* Adjust line height if necessary */
+    color: #000;
+    /* Or any color you prefer */
+    display: none;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hero-content2 {
+    font-size: 50px;
+    /* Adjust size as needed */
+    font-weight: 500;
+    /* You can use 400, 500, or 600 depending on how bold you want it */
+    line-height: 1.2;
+    /* Adjust line height if necessary */
+    color: #000;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.hero-content p {
+    color: #6c757d;
+    font-size: 1.1em;
+    margin: 12px 0 36px;
+    width: 100%;
+    margin-right: 20px;
+    text-align: left;
+    /* background-color: lightpink; */
+}
+
+.btn {
+    padding: 15px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    border: none;
+    width: 13rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.hero-image {
+    width: 90rem;
+    /* height: 500px; */
+    /* background-color: blue; */
+}
+
+.hero-image img {
+    width: 100%;
+    /* height: 100%; */
+    /* height: 35rem; */
+
+}
+
+/* end of this place */
+/* start of this place */
+.sects {
+    display: flex;
+    /* background-color: red; */
+    gap: 10px;
+}
+
+.cold {
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 30px;
+    border: none;
+
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    /* background-color: yellow; */
+    width: 70%;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 8px 0 24px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.description2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    width: 80%;
+    /* width: auto; */
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 8px 0 24px;
+    line-height: 1.7;
+    text-align: left;
+    /* background-color: red; */
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 30px;
+    background-color: #f5faf7;
+    border: none;
+    border-radius: 20px;
+}
+
+.title {
+    font-size: 32px;
+    line-height: 35px;
+    color: black;
+    letter-spacing: -.015em;
+    /* margin-bottom: 1px;
+    margin-right: 78px; */
+}
+
+.left img {
+    height: 20rem;
+}
+
+.learn {
+    color: green;
+    cursor: pointer;
+}
+
+.image-container {
+    margin-top: 60px;
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* start of a new section */
+.see {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.sect {
+    display: flex;
+    /* padding: 20px 30px; */
+    background-color: #009444;
+    padding: 80px 70px 0 60px;
+    margin: 0 auto;
+    border-radius: 20px;
+    /* height: 541px; */
+    gap: 2px;
+    /* align-items: center;
+    justify-content: center; */
+    width: 89%;
+}
+
+.let {
+    flex-basis: 40%;
+    align-items: center;
+    /* margin-left: 90px; */
+    display: flex;
+    justify-content: center;
+}
+
+.let2 {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 20%; */
+    text-align: left;
+}
+
+.imagecotainer {
+    width: 320px;
+    height: auto;
+}
+
+.imagecotainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container2 {
+    width: 290px;
+    height: 200px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.description3 {
+    color: black;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    margin: 8px 0 24px;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    /* width: 79%; */
+    /* background-color: indianred; */
+    gap: 20px;
+}
+
+.styled {
+    color: white;
+    font-size: 30px;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1;
+    font-weight: 500;
+    display: none;
+}
+
+.description3 p {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: left;
+    /* background-color: red; */
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.description3 h2 {
+    color: white;
+    font-size: 40px;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.cta {
+    /* background-color: yellow; */
+    width: 100%;
+}
+
+.cta-button {
+    background-color: white;
+    color: #00A34E;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    /* margin-right: 199px; */
+    width: 19rem;
+}
+
+/* start of new place */
+.according {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+    /* background-color: yellow; */
+}
+
+.acc {
+    display: flex;
+    width: 90%;
+    /* background-color: #009444; */
+    /* padding: 30px 70px 0 70px; */
+    /* margin: 70px; */
+    border-radius: 20px;
+    /* height: 541px; */
+    gap: 20px;
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    margin-top: 40px;
+}
+
+.header p {
+    color: #cfcfcf;
+    font-size: 15px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.header h1 strong {
+    color: #009444;
+    font-weight: 400;
+}
+
+.left1 {
+    /* background-color: yellow;  */
+    flex-basis: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.right1 {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.imagecotainer2 {
+    width: 500px;
+    height: 330px;
+    /* background-color: purple; */
+}
+
+.imagecotainer2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.accordion {
+    width: 550px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.accordion-header::after {
+    font-size: 12px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-weight: 400;
+    border-top: 1px solid #ddd;
+}
+
+.accordion-item:last-child .accordion-header {
+    border-bottom: none;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    font-weight: 400;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.active .accordion-content {
+    display: block;
+}
+
+.btn3 {
+    width: 130px;
+    padding: 4px 0;
+    height: 40px;
+    background: #009444;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* new place */
+.connected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 100%;
+    /* height: 400px; */
+}
+
+.wrappers {
+    background-color: #202021;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    /* padding-top: 40px; */
+    gap: 20px;
+}
+
+.text-part {
+    color: #f0f0f0;
+    /* Light text color for the entire text part */
+    margin-bottom: 20px;
+    /* Space below the text part */
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: flex-start;
+}
+
+.text-part h1 {
+    font-size: 36px;
+    /* Size for the heading */
+    font-weight: 600;
+    /* Bold heading */
+    margin: 0;
+    /* Remove default margin */
+    color: white;
+    /* White color for heading */
+}
+
+.text-part .reasons {
+    font-size: 16px;
+    /* Font size for the paragraph */
+    color: #c0c0c0;
+    /* Light gray color for the paragraph */
+    margin-top: 10px;
+    /* Space between heading and paragraph */
+    text-align: start;
+}
+
+.text-part .learnings {
+    font-size: 16px;
+    /* Font size for the learn more text */
+    color: #28a745;
+    /* Green color for the learn more link */
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    /* Space above the learn more link */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    text-decoration: none;
+    /* Remove underline from link */
+}
+
+.text-part .learnings i {
+    margin-left: 5px;
+    /* Space between text and the right arrow icon */
+}
+
+.text-part .learnings:hover {
+    text-decoration: underline;
+    /* Underline effect on hover */
+}
+
+.dotts {
+    font-size: 30px;
+    /* Size of the dot icon */
+    color: #28a745;
+    /* Green color for the dot indicating connected status */
+    margin-right: 5px;
+    /* Adds space between the dot and the text */
+}
+
+.dotted {
+    font-size: 30px;
+    /* Size of the dot icon */
+    color: #FFD700;
+    /* Gold color for the dot */
+    margin-right: 5px;
+    /* Adds space between the dot and the text */
+}
+
+.green {
+    font-size: 16px;
+    /* Adjust size for the status text */
+    color: #f0f0f0;
+    /* Light color for the status */
+    display: flex;
+    align-items: center;
+    /* Center-aligns the text and dot */
+}
+
+.socials {
+    font-size: 24px;
+    /* Adjust size based on your preference */
+    font-weight: 400;
+    /* Makes the text bold */
+    color: white;
+    /* White color for text */
+    margin: 0;
+    padding: 0;
+}
+
+.cons {
+    background-color: #2c2d2f;
+    /* Dark background color */
+    width: 150px;
+    /* Width of the card */
+    height: 130px;
+    /* Height of the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* Rounded corners for the card */
+}
+
+.cons img {
+    width: 70px;
+    /* Adjust the size of the icon */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placed {
+    margin-top: 50px;
+    /* background-color: red; */
+    background-color: #f6fafe;
+    width: 100%;
+    height: 900px;
+    /* padding: 200px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px; */
+}
+
+.text-area {
+    /* background-color: red; */
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 30%;
+
+}
+
+.number {
+    color: #009444;
+}
+
+.text-area h1 {
+    color: #202021;
+    font-size: 48px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+
+.motto {
+    color: #7B7B7B;
+    font-size: 18px;
+}
+
+.main-area {
+    background-color: transparent;
+    margin-top: ;
+    padding: 10px 50px 0 50px;
+    flex-basis: 60%;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 22px;
+    gap: 5px;
+}
+
+.support {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    font-family: "Nunito Sans", sans-serif;
+    /* background-color: brown; */
+    text-align: center;
+}
+
+.support2 {
+    font-size: 16px;
+    font-weight: 350;
+    color: #211d1d;
+}
+
+.btn4 {
+    width: 50%;
+    padding: 10px 0;
+    height: 40px;
+    background: #009444;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    /* margin-left: 15px; */
+    font-size: 14px;
+}
+
+/* .start{
+    display: flex;
+    jcc
+    align-items: center;
+    background-color: indigo;
+} */
+.btn6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* background-color: yellow; */
+    width: auto;
+    text-align: center;
+}
+
+.perc {
+    color: #009444;
+}
+
+.price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 45px;
+    background-color: #202021;
+    margin-top: 60px;
+}
+
+.text-price {
+    width: 100%;
+    color: white;
+    /* background-color: orange; */
+    text-align: center;
+}
+
+.basics {
+    color: white;
+    font-size: 18px;
+}
+
+.payments-plans {
+    background-color: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50%;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.plan-button {
+    color: white;
+    font-weight: 300;
+    padding: 13px 60px;
+    /* background-color: green; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button.active {
+    background-color: #292929;
+    color: white;
+}
+
+.warp {
+    display: flex;
+    gap: 20px;
+}
+
+.pricing-card {
+    background-color: #292929;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 240px;
+    padding: 20px;
+    text-align: left;
+}
+
+.pricing-card2 {
+    background-color: #292929;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 240px;
+    padding: 20px;
+    text-align: left;
+}
+
+.pricing-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.pricing-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.pricing-card .description9 {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.description6 {
+    font-size: 0.8em;
+    color: #aaa;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.pricing-card .availability {
+    background-color: #2e2e2e;
+    color: #00ff5f;
+    font-size: 0.6em;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: white;
+}
+
+.pricing-card .price {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 2px;
+    margin-top: 8px;
+}
+
+.price3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 2px;
+    margin-top: 70px;
+}
+
+.price4 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 1px;
+    margin-top: 25px;
+}
+
+.price2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 2px;
+    margin-top: 60px;
+}
+
+.pricing-card .price small {
+    display: block;
+    font-size: 0.8em;
+    color: green;
+}
+
+.pricing-card .details2 {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+    border-top: 1.2px solid #444444;
+    padding-top: 10px;
+    margin-top: 30px;
+    /* background-color: purple; */
+    width: auto;
+    text-align: left;
+}
+
+.pricing-card .details {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 10px;
+    /* background-color: purple; */
+    width: auto;
+    text-align: left;
+}
+
+.pricing-card button {
+    background-color: #009444;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.smell {
+    color: #aaa;
+    font-size: 0.6em;
+}
+
+.plan {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adding a hover effect */
+.plan:hover {
+    background-color: #e0e0e0;
+}
+
+/* new section */
+.adds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: purple; */
+    width: 100%;
+    gap: 40px;
+}
+
+.busy {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: green; */
+}
+
+.busy h1 {
+    font-size: 32px;
+    font-weight: 520;
+}
+
+.busy p {
+    font-weight: 350;
+    font-size: 18px;
+    color: #7B7B7B;
+}
+
+.africa {
+    width: 100%;
+    /* background-color: red; */
+}
+
+/* slider details */
+.logo-slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 120px;
+    /* Adjust height as needed */
+    /* background-color: #fff; Change to match your design */
+}
+
+.slider-track {
+    align-items: center;
+    display: flex;
+    width: calc(200px * 6);
+    /* Width of a single slide multiplied by the number of slides */
+    animation: scroll 10s linear infinite;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 200px;
+    /* Adjust width to fit your design */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.stores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.playstore {
+    margin-top: 30px;
+    background-color: #009444;
+    padding: 30px;
+    display: flex;
+    height: auto;
+    padding: 30px 50px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.super {
+    /* background-color: yellow; */
+    width: auto;
+    text-align: start;
+}
+
+.super p {
+    font-weight: 300;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.apple {
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: left;
+    gap: 2px;
+}
+
+.apple h1 {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.apples {
+    color: black;
+    font-size: 25px;
+}
+
+.andriod {
+    /* background-color: blue; */
+    height: 100%;
+    padding: 30px;
+}
+
+.aps {
+    width: 600px;
+    height: 300px;
+    /* background-color: orange; */
+}
+
+.aps img {
+    width: 100%;
+    height: 100%;
+}
+
+.cta-button3 {
+    background-color: white;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    /* margin-right: 199px; */
+    width: 14rem;
+    margin-top: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.cta-button3 .beep {
+    color: green;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.cta-button3 span {
+    color: yellow;
+    /* margin-right:30px ; */
+}
+
+.foots {
+    margin-top: 20px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.foot {
+    width: 90%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px 30px 0;
+}
+
+.bumper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 10px;
+}
+
+.bumper p {
+    color: #000;
+    font-weight: 350;
+    font-size: 1em;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.stap {
+    width: 100px;
+}
+
+.stap img {
+    width: 100%;
+}
+
+.bumpers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.bumpers p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 200px;
+    text-align: left;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Adjust based on the number of slides */
+    }
+}
+
+
+@media(max-width:1200px) {
+    .sub-links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .hams {
+        display: block;
+    }
+
+}
+
+
+@media(max-width:1269px) {
+    .tees {
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin: 0 66px; */
+        padding: 20px 60px;
+        /* width: auto; */
+        /* position: fixed; */
+        /* top: 0.7rem; */
+        /* padding-left: 40px; */
+        background-color: white;
+        z-index: 100;
+    }
+
+    .main-links {
+        text-decoration: none;
+        display: flex;
+        /* gap: 60px; */
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        /* background-color:red; */
+        margin-right: 3rem;
+    }
+
+    .sub-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        font-family: "Nunito Sans", sans-serif;
+    }
+
+    .payments-plans {
+        /* background-color:yellow ; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        font-size: 10px;
+        /* padding: 10px; */
+        border-radius: 20px;
+    }
+
+    .see {
+        /* background-color: yellow; */
+        margin: 0 auto;
+    }
+
+    .sect {
+        gap: 40px;
+        margin: 0 auto;
+    }
+
+    .styled {
+        color: white;
+        font-size: 30px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+        /* background-color: green; */
+        text-align: start;
+        width: 100%;
+    }
+
+    .description3 h2 {
+        color: white;
+        font-size: 40px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: none;
+    }
+
+    .description3 p {
+        font-size: 17px;
+    }
+
+    .plan-button {
+        color: white;
+        font-weight: 300;
+        padding: 13px 70px;
+        width: 100%;
+        /* width: 100px; */
+        text-align: center;
+        /* background-color: green; */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .warp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: green; */
+    }
+
+    .pricing-card {
+        background-color: #292929;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        /* background-color: red; */
+    }
+
+    .description6 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .description9 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .price {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .price3 {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+        margin-top: 70px;
+    }
+}
+
+@media(max-width:1100px) {
+    .styled {
+        color: white;
+        font-size: 30px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+        /* background-color: green; */
+        text-align: start;
+        width: 100%;
+    }
+
+    .description3 h2 {
+        color: white;
+        font-size: 40px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: none;
+    }
+
+    .andriod {
+        display: none;
+    }
+
+    /* .warp{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    } */
+    .warp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: green; */
+    }
+
+    .pricing-card {
+        background-color: #292929;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        /* background-color: red; */
+    }
+
+    .description6 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .description9 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .price {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .price3 {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+        margin-top: 70px;
+    }
+}
+
+@media(max-width:1013px) {
+    .right1 {
+        flex-basis: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+
+    .acc {
+        margin: 0 auto;
+        /* background-color: black; */
+    }
+
+    .accordion {
+        width: 400px;
+        border: none;
+        background-color: white;
+        font-size: 15px;
+        font-weight: 300;
+        font-family: "Nunito Sans", sans-serif;
+    }
+
+    .payments-plans {
+        /* background-color:yellow ; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        font-size: 10px;
+        /* padding: 10px; */
+        border-radius: 20px;
+    }
+
+    .plan-button {
+        color: white;
+        font-weight: 300;
+        padding: 13px 70px;
+        /* width: 100px; */
+        text-align: center;
+        /* background-color: green; */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .styled {
+        color: white;
+        font-size: 30px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+        /* background-color: green; */
+        text-align: start;
+        width: 100%;
+    }
+
+    .description3 h2 {
+        color: white;
+        font-size: 40px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: none;
+    }
+
+    .andriod {
+        display: none;
+    }
+
+    /* .warp{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    } */
+
+    .warp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: green; */
+    }
+
+    .pricing-card {
+        background-color: #292929;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        /* background-color: red; */
+    }
+
+    .description6 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .description9 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .price {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .price3 {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+        margin-top: 70px;
+    }
+}
+
+
+
+@media(max-width:927px) {
+    .every {
+        /* background-color: red; */
+        height: auto;
+        z-index: 100;
+    }
+
+    /* .top .tees{
+        position: sticky;
+        top: 0;
+    } */
+    .tees {
+        width: 100%;
+        /* background-color: green; */
+        position: relative;
+        /* top: 0;
+        z-index: 100; */
+    }
+
+    .hams {
+        display: block;
+        /* margin-right: 20px; */
+        font-size: 30px;
+        text-align: end;
+
+    }
+
+    .carti {
+        max-width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 0 auto;
+        /* background: green; */
+    }
+
+    .top {
+        /* width: auto; */
+        /* background-color: red; */
+        padding: 0.9rem;
+        width: auto;
+    }
+
+    .hero {
+        display: flex;
+        /* background-color: red; */
+        padding: 0;
+        gap: 20px;
+    }
+
+    .hero-content {
+        flex-basis: 50%;
+        /* background-color: skyblue; */
+        padding-top: 30px;
+    }
+
+    .hero-content h1 {
+        /* font-size: 5rem;
+        margin-bottom: 20px;
+        font-weight: 400;
+        background-color: yellow; */
+        font-size: 38px;
+        /* Adjust size as needed */
+        font-weight: 500;
+        /* You can use 400, 500, or 600 depending on how bold you want it */
+        line-height: 1.2;
+        /* Adjust line height if necessary */
+        color: #000;
+        /* Or any color you prefer */
+        /* background-color: green; */
+        display: flex;
+
+    }
+
+    .hero-content2 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #000;
+        display: flex;
+        /* background-color: yellow; */
+        display: none;
+    }
+
+    .hero-image {
+        flex-basis: 50%;
+        /* background-color: green; */
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: none;
+    }
+
+    .hero-content p {
+        background-color: white;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .btn {
+        margin-top: -15px;
+        padding: 15px 20px;
+        background-color: #28a745;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1em;
+        border: none;
+        width: 13rem;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    p {
+        color: white;
+        font-weight: 800;
+        font-family: 'inter', sans-serif;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .sub-links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .sects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .see {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: blue; */
+        margin-top: 140px;
+        margin-left: 45px;
+    }
+
+    .sect {
+        display: flex;
+        /* margin-left: 90px; */
+        flex-direction: column;
+        padding: 10px 19px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .description {
+        width: auto;
+    }
+
+    .description2 {
+        width: auto;
+    }
+
+    .let {
+        /* background-color: purple; */
+        /* flex-basis: 40%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 2 !important;
+    }
+
+    .let2 {
+        /* flex-basis: 60%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 20%; */
+        text-align: left;
+        /* background-color: yellow; */
+        order: 1 !important;
+    }
+
+    .styled {
+        color: white;
+        font-size: 30px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+        /* background-color: green; */
+        text-align: start;
+        width: 100%;
+    }
+
+    .description3 h2 {
+        color: white;
+        font-size: 40px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: none;
+    }
+
+    .according {
+        flex-direction: column;
+        /* background-color: red; */
+        margin-top: 60px;
+        gap: 20px;
+    }
+
+    .acc {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header {}
+
+    .header .bimps {
+        font-weight: 400;
+
+    }
+
+    .text-area {
+        font-size: 20px;
+        /* background-color: red; */
+    }
+
+    .text-area h1 {
+        /* background-color: green; */
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .text-area p {
+        font-size: 13px;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .number {
+        display: block;
+    }
+
+    .payments-plans {
+        /* background-color:yellow ; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        font-size: 10px;
+        /* padding: 10px; */
+        border-radius: 20px;
+    }
+
+    .plan-button {
+        color: white;
+        font-weight: 300;
+        padding: 13px 30px;
+        width: 100%;
+        /* width: 100px; */
+        text-align: center;
+        /* background-color: green; */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .warp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: green; */
+    }
+
+    .pricing-card {
+        background-color: #292929;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        /* background-color: red; */
+    }
+
+    .accordion {
+        /* background-color: green; */
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .left1 {
+        /* background-color: yellow; */
+        width: 100%;
+    }
+
+    .details {
+        /* background-color: red; */
+    }
+
+    /* .pricing-card2{
+    background-color: #292929;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+} */
+    .description6 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .description9 {
+        background-color: red;
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .price {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .price3 {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+        margin-top: 70px;
+
+    }
+
+    .price2 {
+        font-size: 2em;
+        color: #fff;
+        margin-bottom: 2px;
+        margin-top: 50px;
+    }
+
+    .andriod {
+        display: none;
+    }
+}
+
+@media(max-width:745px) {
+    .every {
+        /* background-color: red; */
+        height: auto;
+        position: relative;
+        top: 0;
+        z-index: 100;
+    }
+
+    .carti {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        /* background: green; */
+    }
+
+    .top {
+        width: auto;
+        background-color: #070606;
+        padding: 0.9rem;
+    }
+
+    p {
+        color: white;
+        font-weight: 800;
+        font-family: 'inter', sans-serif;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .sub-links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .hams {
+        display: flex;
+    }
+
+    .sects {
+
+        flex-direction: column;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        /* background-color: yellow; */
+    }
+
+    .hero-content {
+        /* background-color: green; */
+        width: 100%;
+    }
+
+    .hero-content p {
+        /* background-color: blue; */
+    }
+
+    .hero-image {
+        flex-basis: 50%;
+        width: 75%;
+        /* background-color: blue; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: none;
+    }
+
+    .see {
+        /* background-color: red; */
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+
+    }
+
+    .sect {
+        display: flex;
+        /* padding: 20px 30px; */
+        background-color: #009444;
+        /* background-color: yellow; */
+        padding: 80px 70px 0 60px;
+        /* margin: 70px; */
+        border-radius: 20px;
+        /* height: 541px; */
+        gap: 2px;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .styled {
+        color: white;
+        font-size: 30px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: block;
+        /* background-color: green; */
+        text-align: start;
+        width: 100%;
+    }
+
+    .description3 h2 {
+        color: white;
+        font-size: 40px;
+        font-family: "Nunito Sans", sans-serif;
+        line-height: 1;
+        font-weight: 500;
+        display: none;
+    }
+
+    .see {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background-color: yellow; */
+        margin: 30px auto;
+
+    }
+
+    .description3 {
+        /* background-color: blue; */
+        width: 100%;
+    }
+
+    .description3 p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .text-area h1 {
+        /* background-color: green; */
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .connected {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        width: 100%;
+        /* height: 400px; */
+    }
+
+    .wrappers {
+        /* background-color: red; */
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        /* padding-top: 40px; */
+        gap: 20px;
+    }
+
+    .text-part .reasons {
+        font-size: 16px;
+        /* Font size for the paragraph */
+        color: green;
+        /* Light gray color for the paragraph */
+        margin-top: 10px;
+        /* Space between heading and paragraph */
+        text-align: start;
+    }
+
+    .cons {
+        background-color: #2c2d2f;
+        /* Dark background color */
+        width: 150px;
+        /* Width of the card */
+        height: 130px;
+        /* Height of the card */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        /* Rounded corners for the card */
+    }
+
+    .cons img {
+        max-width: 60px;
+        /* background-color: red; */
+        /* Adjust the size of the icon */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .number {
+        display: block;
+    }
+
+    .text-price {
+        font-size: 1.1em;
+    }
+
+    .payments-plans {
+        /* background-color:yellow ; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        font-size: 10px;
+        /* padding: 10px; */
+        border-radius: 20px;
+    }
+
+    .plan-button {
+        color: white;
+        font-weight: 300;
+        padding: 13px 30px;
+        /* width: 100px; */
+        text-align: center;
+        /* background-color: green; */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+}
+
+@media(max-width:500px) {
+    .every {
+        /* background-color: red; */
+        height: auto;
+        position: relative;
+        top: 0;
+        z-index: 100;
+    }
+
+    .carti {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        /* background: green; */
+    }
+
+    .top {
+        width: auto;
+        background-color: #222222;
+        padding: 0.5rem;
+    }
+
+    p {
+        color: white;
+        font-weight: 800;
+        font-family: 'inter', sans-serif;
+        text-align: center;
+        font-size: 10px;
+        padding: 5px 4px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .spee {
+        display: none;
+    }
+
+    .sub-links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+    .see{
+        background-color: yellow;
+        /* width: auto; */
+        /* width: 90%; */
+    }
+
+    .sect {
+        width: 70%;
+        background-color: orangered;
+        /* padding-left: 0; */
+        margin-left: 0;
+    }
+
+    .description3 {
+        /* background-color: gray; */
+        text-align: start;
+        width: ;
+        padding-left: 0;
+    }
+
+    .description3 p {
+        /* background-color: yellow; */
+        width: 70%;
+        text-align: left;
+    }
+    .description3{
+        margin-left: left;
+    }
+
+    .text-area h1 {
+        /* background-color: green; */
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .andriod {
+        display: none;
+    }
+
+    .warp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: green; */
+    }
+
+    .pricing-card {
+        background-color: #292929;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        /* background-color: red; */
+    }
+
+    .description6 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .description9 {
+        /* background-color: red; */
+        text-align: start;
+        width: auto;
+    }
+
+    .pricing-card .price {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+    }
+
+    .price3 {
+        background-color: white;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 2px;
+        margin-top: 70px;
+    }
+    .payments-plans {
+        /* background-color:yellow ; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+        font-size: 10px;
+        /* padding: 10px; */
+        border-radius: 20px;
+    }
+}
+
+@media(max-width:400px) {
+    .carti {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+        /* background: green; */
+    }
+
+    .top {
+        width: auto;
+        background-color: #222222;
+        padding: 0.5rem;
+    }
+
+    p {
+        color: white;
+        font-weight: 800;
+        font-family: 'inter', sans-serif;
+        text-align: center;
+        font-size: 10px;
+        padding: 5px 4px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .spee {
+        display: none;
+    }
+
+    .sub-links {
+        display: none;
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .andriod {
+        display: none;
+    }
+}
